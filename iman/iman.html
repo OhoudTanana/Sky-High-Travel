@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<title> Top Best Hospitals </title>
+  <meta charset="utf-8">
+  
+  
+  <link rel="stylesheet" href="travel.css">
+  
+  <link rel="icon" href="plane.png" type="image/ico" >
+  
+  
+<script src = "https://code.jquery.com/jquery-3.6.0.min.js" > </script>
+<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryvalidate/1.19.2/jquery.validate.min.js"> </script>
+
+  
+  
+ <script>
+function ValidateEmail(inputText) 
+{ 
+var result=false; 
+var mailformat = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/; 
+if(mailformat.test(inputText.value)) 
+{ 
+result=true; 
+ alert("your email is correct"); 
+} 
+else 
+{ 
+ alert("Wrong Email"); 
+} 
+} 
+
+</script>
+
+<style>
+
+header {
+  background-color: #9BC1C2; 
+  background-image: url(hinh-nen.jpg);
+  background-repeat: no-repeat;
+  height: 400px;
+  background-position: right;
+    
+}
+
+main{
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  margin-top: 1em ;
+  
+}
+
+
+h1{
+	color:#2E5090;
+	text-align:center;
+}
+
+ul{
+font-size: 25px;
+float:left;
+
+}
+
+li{
+float: left;
+}
+
+table{
+    margin-bottom:30px;
+    border: 5px solid #000066;
+   	margin-top:14%;
+	margin-left: 25px;
+}
+td, th{
+    border-style:none;
+	text-align:center;
+	font-family: Arial, sans-serif;
+	height: 60px;
+}
+
+tr:first-of-type{
+   background-color:#006;
+   color: #EAEAEA;
+   }
+
+
+
+form{
+	border: 3px default #2E5090;
+	background-color: #2E5090;
+	height: 200px;
+	text-align: center;
+	padding-top: 2em;
+	margin-bottom: 3em;
+}
+
+label{
+	color: #AFDBE5;
+	font-size: 20px;
+	
+}
+
+input {
+  margin-bottom: 4em;
+}
+
+
+button {
+    border:3px #AFDBF5 double;
+    background-color:#AFDBF5;
+    color: #012169;
+    font-weight: bold;
+    font-size: 15px; 
+	
+}
+     
+     
+ button:hover {
+    border: 3px #87CEFA inset ;
+}
+
+
+
+
+footer { 
+        background-color: #6082B6; 
+        font-size: small;
+        font-style: italic; 
+        text-align: center; 
+        padding: 1em;
+        margin-top: 8.6em;;
+        height:5.2em;
+		color: #012169;
+		   
+ }
+	
+body {
+background-color:#F0F8FF; }
+
+</style>
+
+
+<script src="https://kit.fontawesome.com/c4404dcb9d.js" crossorigin="anonymous"></script>
+
+<script>
+
+
+$(document).ready(function() {
+var lastModified = document.lastModified;
+var message = "This page was last modified on " + lastModified ;
+$("#lastm").html(message);
+});
+
+
+</script>
+
+
+
+</head>
+
+
+<div>
+<body>
+
+<header>
+
+
+<img style="float:left;  display: inline-block; padding-top:15px;" src="plane.png" width="100" height="110">
+
+
+
+
+
+<nav style="padding-top:60px; margin-left:120px;"> 
+
+ <a style="color:#F0F8FF; font-size:20px;" href="../ohoud-Main WebPage/Ohoud-Home.html">Home</a> &emsp; 
+
+</nav>
+
+
+</header>
+
+<main>
+
+
+<p id=hi> Book an Appointment now! <p>
+
+<form name="Contact" method="post" id="form" onsubmit="return ValidateEmail(document.Contact.myEmail);">
+
+<label for="myName"> First Name: </label>
+<input type ="text" name="myFname"  id="myFnme" size="30" required >&nbsp;
+
+<label for="myName"> Last Name: </label>
+<input type ="text" name="myLname"  id="myLname" size="30" required>&nbsp;
+
+<label>hospital Name: </label>
+<input type="text" name="hname" id="hname" size="30" required>&nbsp;
+<br>
+
+<label for="date"> Appointment date: </label>
+<input type="date" id="date" name="date"  required>&nbsp;
+
+<label for="time"> Time: </label>
+<input type="text" name="Atime" id="Atime" size="30"  list="Atime"  required> 
+  <datalist id="Atime">
+    <option value="Am"  label="Am">
+	<option value="Pm"  label="Pm">
+  </datalist> &nbsp;
+	
+
+
+<label for="myEmail"> E-mail: </label>
+<input type= "text" name="myEmail" id="myEmail" size="30" required>&nbsp;
+
+ <button> BOOK NOW </button>
+
+</form>
+
+
+
+<h1> Take a Look At The Best Hospitals <h1>
+
+
+<ul>
+<p> The following 15 hospitals are the best, ranked on:</p>
+
+<li>Patient satisfaction</li><br>
+<li>Bed occupancy rates</li><br>
+<li>Staff to patient ratios</li><br>
+<li>International accreditation</li><br>
+</ul>
+<br><br>
+
+
+<table>
+<tr>
+<td>Rank</td>
+<td>Hospital</td>
+<td>Country</td>
+<td>City</td>
+<td>Hospital Beds</td>
+</tr>
+
+<tr class=altrow>
+<td>1</td>
+<td>Singapore General Hospital </td>
+<td>Singapore</td>
+<td>Singapore</td>
+<td>1,400</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>AP-HP - Hôpital Universitaire Pitié Salpêtrière  </td>
+<td>France</td>
+<td>Paris</td>
+<td>1,717</td>
+</tr>
+
+<tr class=altrow>
+<td>3</td>
+<td>St. Luke's International Hospital  </td>
+<td>Japan</td>
+<td>Tokyo</td>
+<td>520</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>The University of Tokyo Hospital   </td>
+<td>Japan</td>
+<td>Tokyo</td>
+<td>1,217</td>
+</tr>
+
+<tr class=altrow>
+<td>5</td>
+<td>National University Hospital </td>
+<td>Singapore</td>
+<td>Singapore</td>
+<td>1,200</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>CHU Lille - Hôpital Claude-Huriez  </td>
+<td>France</td>
+<td>Lille</td>
+<td>700</td>
+</tr>
+
+<tr class=altrow>
+<td>7</td>
+<td>AP-HP - Hôpital Européen Georges Pompidou  </td>
+<td>France</td>
+<td>Paris</td>
+<td>827</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>Kameda Medical Center </td>
+<td>Japan</td>
+<td>Kanogawa</td>
+<td>917</td>
+</tr>
+
+<tr class=altrow>
+<td>9</td>
+<td>Mount Elizabeth Hospital - Orchard </td>
+<td>Singapore</td>
+<td>Singapore</td>
+<td>345</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>HMS Mirdif Hospital </td>
+<td>UAE</td>
+<td>Dubai</td>
+<td>70</td>
+</tr>
+
+<tr class=altrow>
+<td>11</td>
+<td>Hotel Dieu Hospital </td>
+<td>Lebanon</td>
+<td>Beirut</td>
+<td>503</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td>Zulekha Hospital </td>
+<td>UEA</td>
+<td>Dubai</td>
+<td>185</td>
+</tr>
+
+<tr class=altrow>
+<td>13</td>
+<td>saint George Hospital University Medical center </td>
+<td>Lebanon</td>
+<td>Beirut</td>
+<td>400</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td>Beirut General Hospital </td>
+<td>Lebanon</td>
+<td>Beirut</td>
+<td>400</td>
+</tr>
+
+<tr class=altrow>
+<td>15</td>
+<td>Medcare Hospital</td>
+<td>UEA</td>
+<td>Dubai</td>
+<td>64</td>
+</tr>
+
+</table>
+
+
+<h1 style="color:#2E5090;text-align:left;margin-left:20px;margin-bottom:10px">Best Hospitals in France</h1>
+<ul style="color:#000066">
+<li>
+AP-HP - Hôpital Universitaire Pitié Salpêtrière<br>
+&nbsp;Betty Salpetriere Hospital. ( French : Hôpital Pitié-Salpêtrière ) is a famous university hospital in the 13th arrondissement of Paris . <br> +33 1 42 16 00 00
+</li>
+
+<li>
+AP-HP - Hôpital Européen Georges Pompidou<br>
+&nbsp;The European Georges-Pompidou Hospital ( HEGP ) is a hospital of the Assistance Publique - Hospitals of Paris (AP-HP). It is located between Leblanc and Professor-Florian-Delbarre streets in the 15th arrondissement of Paris , on the banks of the Seine not far from the Garigliano bridge , near the André-Citroën park and the offices of France  Télévisions . <br> +33 1 56 09 20 00 
+</li>
+
+<li>
+CHU Lille - Hôpital Claude-Huriez <br>
+&nbsp;Located in Lille , in the European Metropolis of Lille ( Hauts-de-France ).<br>  +33 3 20 44 56 62 
+</li>
+</ul>
+
+<button style="margin-left:20px" onclick="myFunction()">more</button>
+<p id="demo"></p>
+<script>
+function myFunction(){
+  document.getElementById("demo").innerHTML = "Useful Emergency numbers:<br>15 - SAMU <br>17 - EMERGENCY POLICE NUMBER <br> 18 - FIRE BRIGADE <br> 114 - FRENCH EMERGENCY NUMBER FOR DEAF AND HARD-OF-HEARING PEOPLE <br> SOS help - helpline in France for English speakers: 01 46 21 46 46 from 3 pm to 11 pm";
+}
+</script>
+
+<br><br>
+
+<div class="gallery"> 
+<img src="Hôpital Universitaire Pitié Salpêtrière.jpg" alt="Pitié Salpêtrière" >
+<img src="Hôpital Européen Georges Pompidou.jpg" alt="Georges Pompidou" >
+<img src="CHU Lille - Hôpital Claude-Huriez.jpg" alt="Claude-Huriez" >
+</div>
+
+
+<h1 style="color:#2E5090;text-align:left;margin-left:20px;margin-bottom:10px">Best Hospitals in Japan</h1>
+<ul style="color:#000066">
+<li>
+The University of Tokyo Hospital :<br>
+&nbsp;The University of Tokyo Hospital is located at 7-3-1 Hongo, Bunkyo-ku, Tokyo 113-8655, Japan <br> +81 3815 5411
+</li>
+
+<li>
+St. Luke's International Hospital:<br>
+&nbsp;St. Luke's International Hospital is located in Tokyo, Japan. The hospital's address is 9-1 Akashi-cho, Chuo-ku, Tokyo 104-8560, Japan. <br> +81 3 3541 5151 
+</li>
+
+<li>
+Kameda Medical Center:<br>
+&nbsp;Kameda Medical Center is located in Kamogawa City, Chiba Prefecture, Japan. The full address is:
+Kameda Medical Center 929 Higashi-cho, Kamogawa-shi, Chiba 296-8602, Japan. <br> +81 4 7092 2211
+</li>
+</ul>
+
+<button style="margin-left:20px" onclick="myFunction2()">more</button>
+<p id="demo2"></p>
+<script>
+function myFunction2(){
+  document.getElementById("demo2").innerHTML = "Useful Emergency numbers:<br>Police110<br>Fire119<br>Ambulance119<br>Non-urgent Medical#7119Coast Guard118Disaster Safety Confirmation171Report Child Abuse189";
+}
+</script>
+
+<br><br>
+
+<div class="gallery"> 
+<img src="The University of Tokyo Hospital.jpg" alt="universit of tokyo" >
+<img src="St. Luke's International Hospital.jpeg" alt="st. lukes" >
+<img src="kameda Medical Center.jpeg" alt="kameda medical" >
+</div>
+
+
+<h1 style="color:#2E5090;text-align:left;margin-left:20px;margin-bottom:10px">Best Hospitals in Lebanon</h1>
+<ul style="color:#000066">
+<li>
+Hotel Dieu Hospital:<br>
+&nbsp;Hotel Dieu Hospital is the oldest French hospital in Lebnon.It is located at Alfred Naccache street, Achrafieh, Beirut, Lebanon.<br>+961 01 604 000
+</li>
+
+<li>
+Saint George Hospital University Medical Center:<br>
+&nbsp;Saint George Hospital University Medical Center is the oldest Lebanese hospital,located in the Rmeil region of the Lebanese capital Beirut,<br> +961 01 441 000
+</li>
+
+<li>
+Beirut General Hospital:<br>
+&nbsp;Located in Ramlet Baida area, Mar Elias sector, Beirut, Lebanon.<br> +961 01 850 213
+</li>
+
+</ul>
+
+<button style="margin-left:20px" onclick="myFunction3()">more</button>
+<p id="demo3"></p>
+<script>
+function myFunction3(){
+  document.getElementById("demo3").innerHTML = "Useful Emergency numbers:<br>Fire Brigade, 175, +961 1 445 000.<br> Police (operation): 112.<br> Lebanese Red Cross: 140/ +961 5 924 017/ 18/ 20, +961 1 322 986";
+}
+</script>
+
+<br><br>
+
+<div class="gallery"> 
+<img src="Hotel Dieu Hospital.jpg" alt="Hotel Dieu" >
+<img src="Saint George Hospital University Medical Center.jpg" alt="Saint George" >
+<img src="Beirut General Hospital.jpg" alt="Beirut General" >
+</div>
+
+
+<h1 style="color:#2E5090;text-align:left;margin-left:20px;margin-bottom:10px">Best Hospitals in Singapore</h1>
+<ul style="color:#000066">
+<li>
+National University Hospital:<br>
+&nbsp;The National University Hospital (NUH) is a tertiary referral hospital and academic medical centre in Singapore, located in Kent Ridge. <br> +65 6908 2222
+</li>
+
+<li>
+Mount Elizabeth Hospital - Orchard:<br>
+&nbsp;Mount Elizabeth Hospital, known colloquially as Mount E, is a 345-bed private hospital in Singapore located in 3 Mount Elizabeth, Singapore 228510. <br> +65 6737 2666
+</li>
+
+<li>
+Singapore General Hospital:<br>
+&nbsp;Singapore General Hospital (SGH) is an academic health science centre and tertiary referral hospital in Singapore. It is located next to the Bukit Merah and Chinatown districts of the Central Region, close to the Outram Community Hospital (OCH). <br> +65 6222 3322
+</li>
+</ul>
+
+
+<button style="margin-left:20px" onclick="myFunction4()">more</button>
+<p id="demo4"></p>
+<script>
+function myFunction4(){
+  document.getElementById("demo4").innerHTML = "Useful Emergency numbers:<br>Police Emergencies. 999.<br>Police Emergency SMS. 999.<br>Police Hotline. 1800 255 0000.";
+}
+</script>
+
+<br><br>
+
+<div class="gallery"> 
+<img src="National University Hospital.jpg" alt="national university" >
+<img src="Mount Elizabeth Hospital - Orchard.jpg" alt="mount elizabeth" >
+<img src="Singapore General Hospital.jpg" alt="sigapore general" >
+</div>
+
+
+
+
+<h1 style="color:#2E5090;text-align:left;margin-left:20px;margin-bottom:10px">Best Hospitals in Dubai</h1>
+<ul style="color:#000066">
+<li>
+HMS Mirdif Hospital:<br>
+&nbsp;HMS Mirdif is a private hospital located in the Mirdif area of Dubai, United Arab Emirates. The hospital is located at 37B Street, Mirdif Dubai. <br> +971 800 467
+</li>
+
+<li>
+Zulekha Hospital:<br>
+&nbsp; Zulekha Hospital Dubai: located in Al Nahda, Dubai, on Al Nahda Road. The hospital's address is P.O. Box 48577, Dubai, UAE.<br> +971 600 524442
+</li>
+
+<li>
+Medcare Hospital:<br>
+&nbsp;Medcare Hospital Dubai: Near Safa Park, Jumeirah Beach Road, Dubai, UAE. <br> +971 800 6332273
+</li>
+</ul>
+
+
+<button style="margin-left:20px" onclick="myFunction5()">more</button>
+<p id="demo5"></p>
+<script>
+function myFunction5(){
+  document.getElementById("demo5").innerHTML = "Useful Emergency numbers:<br>Police Emergencies. 999.<br>Police Emergency SMS. 999.<br>Police Hotline. 1800 255 0000.";
+}
+</script>
+
+<br><br>
+
+<div class="gallery"> 
+<img src="HMS Mirdif Hospital.webp" alt="national university" >
+<img src="Zulekha Hospital.jpg" alt="mount elizabeth" >
+<img src="Medcare Hospital.jpg" alt="sigapore general" >
+</div>
+</main>
+
+
+
+<footer> 
+
+  Copyright &copy; Sky High Travel <br>
+<a href="mailto:SkyHighTravel@hotmail.com"> skyHighTravel@hotmail.com </a>
+
+<div id = "lastm" > </div>
+
+</footer>
+
+
+</div>
+
+
+</body>
+
+
+</html>

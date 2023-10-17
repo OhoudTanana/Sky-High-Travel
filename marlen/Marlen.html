@@ -1,0 +1,443 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>  Sky High Travel </title>
+
+
+<meta charset = "utf - 8" >
+
+ <link rel="stylesheet" href="travel.css">
+
+<link rel="icon" href="plane.png" type="image/ico" >
+
+
+
+<script src = "https://code.jquery.com/jquery-3.6.0.min.js" > </script>
+<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryvalidate/1.19.2/jquery.validate.min.js"> </script>
+
+
+
+
+<script>
+$(document).ready(function() {
+var lastModified = document.lastModified;
+var message = "This page was last modified on " + lastModified ;
+$("#lastm").html(message);
+});
+
+
+
+   $(document).ready(function() {
+  $('form').submit(function(event) {
+    
+    event.preventDefault();
+    
+    
+    var email = $('#email').val();
+    
+    
+    var emailregex = /^\S+@\S+\.\S+$/;
+    
+   
+    if (!emailregex.test(email)) {
+      
+      $('#email').css('border-color', 'red');
+      $('#email').val('');
+      $('#email').attr('placeholder', 'Invalid email');
+    } else {
+      
+      $('form').unbind('submit').submit();
+    }
+  });
+});
+
+
+$(document).ready(function() {
+var lastModified = document.lastModified;
+var message = "This page was last modified on " + lastModified ;
+$("#lastm").html(message);
+});
+
+
+</script>
+
+
+ <style>
+ 
+
+h1{
+     text-shadow:3px 3px 1px #AFDBF5;
+     font-size: 40px;
+}
+
+
+nav{
+     padding-top:50px;
+     font-size: 30px;
+     background-color:#6082B6;
+	 color: #012169;
+     padding-bottom:50px;
+     
+ }
+ 
+ 
+nav a {
+     color: #012169;
+	 }
+ 
+ 
+ 
+button[type="submit"] {
+     background-color: #4CAF50;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}
+
+
+
+body{
+	 background-color:#F0F8FF;
+	 text-align:center;
+	 color:#012169;
+}
+
+
+
+p{
+	 font-size:30px;
+	 text-align:center;
+}
+
+
+a{
+     position: relative; 
+     text-decoration: none;
+     font-family: 'Poppins';
+     font-size: 35px;
+     letter-spacing: 0.5px;
+     padding: 10px;
+	 
+}
+
+
+a:after{
+     content: "";
+     position: absolute;
+     background-color: blue;
+     height: 3px;
+     width: 0;
+     left: 0;
+     bottom: -1px;
+     transition: 0.4s;
+	 
+} 
+
+
+a:hover:after{
+     width: 100%;
+	 background-color: #F0F8FF;
+}
+
+
+
+img:hover {
+
+	 transform:scale(1.05) rotate(-2deg);
+	 z-index:2;
+	 border-radius:2px;
+	 background:white;
+     border: 3px  blue; 
+     background:none;
+     font-size:20px;
+     font-family:montserrat;
+     cursor: pointer;
+     margin:1px;
+     transition:0.9s;
+  
+}
+
+
+footer { 
+     background-color: #6082B6; 
+     font-size: small;
+     font-style: italic; 
+     text-align: center; 
+     padding: 1em;
+     margin-top: 8.6em;;
+     height:5.2em;
+	 color: #012169;
+		   
+ }
+ 
+ 
+footer a{
+     font-size: small;
+ }
+	 
+footer a:hover:after{ 
+     width : 0% }
+
+
+
+button#submit {
+     background-color:Blue ;
+     color: white;
+	 padding: 10px 20px;
+	 border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ 
+}
+
+
+			  
+
+ </style>
+
+ </head>
+ 
+ 
+ 
+<body>
+ 
+<img style="float:left;  display: inline-block;  padding-top:20px;  margin-left:10px;" src="plane.png" width="90" height="90">
+
+
+   
+<nav>
+  <a href="../ohoud-Main WebPage/Ohoud-Home.html">Home</a>&nbsp;
+  <a href="#lebanon">Lebanon</a>&nbsp;
+  <a href="#UAE">UAE</a>&nbsp;
+  <a href="#Singapora">Singapora</a>&nbsp;
+  <a href="#Japan">Japan</a>&nbsp;
+  <a href="#France">France</a>&nbsp; 
+</nav>
+
+
+<b><h1><section id="lebanon">Where to go in Lebanon</section></h1></b>
+<p id="demo">Lebanon is a small country located in the eastern Mediterranean,
+ known for its diverse population, rich history, and cultural heritage.
+ However, it has faced political instability, economic turmoil,
+ and social unrest in recent years. Despite these challenges,
+ Lebanon remains a resilient and vibrant nation with beautiful 
+landscapes and delicious cuisine
+</p>
+
+<div class="cont">
+
+<div class="gall">
+
+<img id="myImage" src="6a.jpg" alt="lebanon" width="120px" height="120">
+
+<div class="desc"> Guided Small-Group Tour to Jeita Grotto,</div>
+
+</div>
+
+<div class="gall">
+
+<img src="70.jpg" alt="lebanon" id="myImage">
+
+<div class="desc">Paragliding Flight in Lebanon</div>
+
+</div>
+
+<div class="gall">
+
+<img src="45.jpg" alt="lebanon" id="myImage">
+
+<div class="desc">Jeita Grotto - Harissa - Byblos Trip</div>
+
+</div>
+
+<br><br>
+
+<div class="gall">
+
+<img src="6b.jpg" alt="lebanon" id="myImage">
+
+<div class="desc">Chouwen Lake Hiking & Swimming</div>
+
+</div>
+
+
+</div>
+
+<b><h1 id="UAE">UAE</h1></b>
+
+<p>The UAE (United Arab Emirates) is a federation of seven emirates located in the Middle East,
+ with a population of around 10 million people. It is known for its modern cities, stunning natural landscapes,
+ and thriving economy fueled by oil reserves.
+ Dubai and Abu Dhabi are two cosmopolitan cities that offer world-class shopping
+ , entertainment, and cultural experiences</p>
+ 
+<div class="cont">
+
+<div class="gall">
+
+<img src="05.jpg" alt="uae" id="myImage">
+
+<div class="desc"> Dubai Desert 4x4 Dune Bashing, Self-Ride 60min ATV Quad, Camel Ride,Shows,Dinner,</div>
+
+</div>
+
+<div class="gall">
+
+<img src="6d.jpg" alt="uae" id="myImage">
+
+<div class="desc">Skip the Line: Burj Khalifa - At the Top Sky Ticket (Level 124, 125 & 148)</div>
+
+</div>
+
+<div class="gall">
+
+<img src="147.jpg" alt="uae" id="myImage">
+
+<div class="desc"> Superyacht Experience with Live Music & Drinks</div>
+
+</div>
+
+<div class="gall">
+
+<img src="98.jpg" alt="uae" id="myImage">
+
+<div class="desc">Skip-The-Line Ticket to Dubai Miracle Garden</div>
+
+</div>
+
+</div>
+
+<b><h1 id="Singapora">Where to go in Singapora</h1></b>
+<p>Singapore is a small island city-state in Southeast
+ Asia known for its efficiency, cleanliness, multicultural 
+ food scene, and thriving economy. It has a population of 
+ around 6 million people and offers a variety of attractions, 
+ including museums, landmarks, and green spaces.</p>
+ 
+<div class="cont">
+
+<div class="gall">
+
+<img src="4b.jpg" alt="Singapore" id="myImage">
+
+<div class="desc">Historical Singapore Bike Tour</div>
+
+</div>
+
+<div class="gall">
+
+<img src="cloud-forest.jpg" alt="Singapore" id="myImage">
+
+<div class="desc">Cloud Forest</div>
+
+</div>
+
+<div class="gall">
+
+<img src="photo2jpg.jpg" alt="Singapore" id="myImage">
+
+<div class="desc">Sungei Buloh Wetland Reserve</div>
+
+</div>
+<div class="gall">
+<img src="c9.jpg" alt="Singapore" id="myImage">
+<div class="desc">Singapore Night Safari Tram Ride</div>
+</div>
+
+</div>
+<b><h1 id="Japan">Where to go in Japan</h1></b>
+<p>Japan is an island nation in East Asia famous 
+for its blend of ancient traditions and modern technology.
+ With a population of 126 million, it boasts stunning landscapes, 
+ delicious cuisine, and a rich cultural heritage, 
+ including UNESCO World Heritage Sites and traditional arts. 
+ Japan is a leading economic power and a popular destination 
+ for travelers worldwide.</p>
+<div class="cont">
+
+
+<div class="gall">
+<img src="images.jpg" alt="japan" id="myImage">
+<div class="desc">Mount Fujie</div>
+</div>
+<div class="gall">
+<img src="planning-a-trip-to-japan-1100x733.jpg" alt="japan" id="myImage">
+<div class="desc">Kyoto</div>
+</div>
+<div class="gall">
+<img src="takayama-street-1100x825.jpg" alt="japan" id="myImage">
+<div class="desc">Takayama</div>
+</div>
+<div class="gall">
+<img src="tsumago-japan-1500-1100x825.jpg" alt="Japan" id="myImage">
+<div class="desc">Tsumago</div>
+</div>
+</div>
+<b><h1 id="France">Where to go in France</h1></b>
+<p>France is a Western European country known 
+for its rich culture, iconic landmarks such as
+ the Eiffel Tower, and world-renowned cuisine and wines.
+ With its diverse landscapes, fascinating history, and 
+ artistic legacy, France is a popular destination for
+ travelers from around the world.</p>
+ <div class="cont">
+<div class="gall">
+<img src="france-best-places-to-visit-charming-countryside-provence-lavender-fields.jpg" alt="france" id="myImage">
+<div class="desc">The Charming Countryside of Provence</div>
+</div>
+<div class="gall">
+<img src="best-places-france-french-riviera-villefranche-sur-mer.jpg" alt="france" id="myImage">
+<div class="desc">Côte d'Azur</div>
+</div>
+<div class="gall">
+<img src="best-places-france-paris.jpg" alt="france" id="myImage">
+<div class="desc">Paris</div>
+</div>
+<div class="gall">
+<img src="best-places-france-loire-valley-chateau-d-azay-le-rideau.jpg" alt="france" id="myImage">
+<div class="desc">The Châteaux of the Loire Valley</div>
+</div>
+</div>
+ <br><br>
+ <h1 id="kiko" > Rate our page </h1>
+ <form style="font-size:35px; text-align:left;
+padding-left:40px; ">
+ <input type="radio" name="rate" id="rate" value="good">Excellent<br>
+  <input type="radio" name="rate" id="rate" value="Very good">Very Good<br>
+   <input type="radio" name="rate" id="rate" value="good">Good<br>
+    <input type="radio" name="rate" id="rate" value="good">Not Bad <br>
+ </form>
+<a href="https://www.instagram.com/">
+  <i class="fab fa-instagram"></i>
+</a>
+<br>
+<br>
+
+<form method="post" name="femail" id="femail" action="../ohoud-Main WebPage/Ohoud-Thankyou.html">
+<div id="like" >
+  <label for="email"><b> Enter your email to get our special offers 😎</b></label>
+  <input type="email" id="email" name="email" placeholder="Enter your email...."  width="40px" height="25px" >
+  <input style="   border:3px #AFDBF5 outset  ;background-color:#AFDBF5; color: #012169;  font-weight: bold;  font-size: 15px;"  type="submit" value="submit">
+</div>
+</form>
+
+ </body>
+ 
+<footer> 
+
+  Copyright &copy; Sky High Travel <br>
+<a href="mailto:SkyHighTravel@hotmail.com"> skyHighTravel@hotmail.com </a>
+
+<div id = "lastm" > </div>
+
+</footer>
+
+
+
+ 
+
+</html>

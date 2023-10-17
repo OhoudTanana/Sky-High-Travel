@@ -1,0 +1,620 @@
+<!DOCTYPE.html>
+
+<html lang = "en" >
+
+<head>
+
+<title>  Sky High Travel </title>
+
+<meta charset = "utf - 8" >
+
+<link rel="stylesheet" href="travel.css">
+
+<link rel="icon" href="plane.png" type="image/ico" >
+
+<script src = "https://code.jquery.com/jquery-3.6.0.min.js" > </script>
+<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryvalidate/1.19.2/jquery.validate.min.js"> </script>
+
+<script>
+
+
+
+window.addEventListener("load", function() {
+  var slide = document.getElementById("image");
+
+  var photos = ["l.jpg", "d.jpg", "p.jpg", "s.jpg", "j.jpg"];
+
+  var i = 0;
+
+  function change() {
+
+    slide.src = photos[i];
+    i++;
+
+    if( i=== photos.length) {
+     i = 0;
+    } 
+
+  }
+
+  setInterval(change, 3000);
+});
+
+
+
+
+
+$(document).ready(function() {
+  
+  $("#button1").click(function() {
+    $("#cars").hide();
+    $("#tour").show();
+  });
+  
+  
+  $("#button3").click(function() {
+    $("#tour").hide();
+    $("#cars").show();
+  });
+});
+
+
+
+
+
+function readmore(){
+document.getElementById("click").innerHTML = "Sky High Travel is your gateaway to exciting destinations around the world! We're dedicated to providing  you with a seamless travel experience, from easy online booking and overview to your destinations from food to friendly in-flight service. With our modern fleet and affordable fares,we make it easy to explore new places,visit loved ones,or simply get away from it all. Ready for an adventure? Take off with us and discover the world!" 
+
+}
+
+
+$(document).ready(function() {
+var lastModified = document.lastModified;
+var message = "This page was last modified on " + lastModified ;
+$("#lastm").html(message);
+});
+
+
+
+
+
+function Validate() 
+{ 
+
+result = false;
+
+var email = document.getElementById("myEmail").value; 
+
+var mailformat = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/; 
+if(mailformat.test(email)) 
+{ 
+result=true; 
+ //alert("your email is correct"); 
+} 
+else 
+{ 
+alert("Please enter a valid email address.");
+ //alert("Wrong Email");
+}
+
+return result;
+}
+
+
+
+</script>
+
+ 
+<style>
+
+
+
+.containers {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
+ }
+
+
+section{
+        height: 100vh;
+        dispaly: flex;
+        scroll-snap-align: start;
+}
+
+
+ 
+form{ 
+        border: 3px default #2E5090 ;
+        background-color: #2E5090 ;  
+        height:200px;
+	
+	 }
+
+
+
+label{ color:#AFDBF5;
+       font-size:20px;
+        }
+
+
+
+button {
+        border:3px #AFDBF5 outset  ;
+	    background-color:#AFDBF5;
+	    color: #012169;
+		font-weight: bold;
+		font-size: 15px; 
+				 
+				 
+				 
+	   }
+
+	   
+
+	   
+ button:hover {
+                border: 3px #87CEFA inset ;
+				
+			  }
+			  
+
+
+h2 {
+     
+	    text-align: center;
+	    padding-top: 20px;
+        font-size:50px;
+	    color: #012169;
+	    text-shadow: 3px 3px 1px #AFDBF5;
+		
+	 }
+	 
+ 
+
+
+a img:hover{ 
+        filter: brightness(80%);
+	    transition: 100ms;
+	    border: 3px inset #AFDBF5;
+}
+
+
+h3 {
+	    padding-top: 20px;
+	    font-size:40px;
+	    color: #012169;
+	    text-shadow: 3px 3px 1px #AFDBF5;
+	    margin-left: 30px;
+	    margin-bottom: 60px;
+	 
+	}
+
+
+footer { 
+        background-color: #6082B6; 
+        font-size: small;
+        font-style: italic; 
+        text-align: center; 
+        padding: 1em;
+        margin-top: 8.6em;;
+        height:5.2em;
+		color: #012169;
+		   
+ }
+	  
+
+
+
+table{ 
+        width: 700px; 
+		height: 300px;
+        border: 1px solid #3F2860;
+        margin-bottom: 1em;
+        margin-right: auto;
+        margin-left: auto;
+}
+
+td, th {
+	   padding: 5px;
+	   border: 1px solid #3F2860;
+	   color: #012169;
+	   text-align: center;
+}
+
+tr:nth-of-type(even){background-color: #B0C4DE;}
+
+
+ 
+nav{
+
+        display:inline-block;
+		margin-left: 50px;
+		font-size: 20px;
+		color: #012169;
+		
+}
+
+nav a {
+
+        display:inline-block;
+		margin-left: 50px;
+		font-size: 20px;
+		color: #012169;
+		text-decoration: none;
+
+}
+
+
+
+nav a:hover{color: #87CEFA; }
+
+a {
+text-decoration: none;
+}
+
+
+* {box-sizing: border-box; }
+
+
+
+</style> 
+
+
+
+</head>
+
+<body>
+
+<div class = "containers">
+
+<section class = "color"   id="Reservation" >
+
+<body>
+
+<header> 
+
+<img style="float:left;  display: inline-block; padding-top:15px;" src="plane.png" width="100" height="110">
+
+<h1 class="h-1"> Sky High Travel  </h1>
+
+
+
+<nav> 
+
+ <a href="#About">About</a> &emsp; 
+ <a href="#Reservation"> Reservation</a>  &emsp;
+ <a href="#About"> Explore </a>  &emsp;
+ <a href="#Contact"> Contact </a>  &emsp;
+
+</nav>
+
+
+
+
+</header>
+
+<main>
+
+<img  style="border:3px #AFDBF5 ridge; margin-left:15px;" id="image" src="l.jpg" width="1400" height="350" >
+
+
+<div class = "buttons-one">
+
+<input class = "buttons-style-one" type = "button" value = "Air Tours" id="button1" >
+
+<a href="https://www.booking.com/?aid=1266753"> <input class = "buttons-style-one" type = "button" value = "Hotels" id = "button2"> </a>
+
+<input class = "buttons-style-one" type = "button" value = "Cars" id = "button3">
+
+</div>
+
+<div style=" margin-top: 6px;">
+
+<form name="reserve" method="post" id="tour"  action="Ohoud-Thankyou.html"  >
+
+<div style = "padding-top: 30px;">
+
+<label for="from" style="margin-left:300px;"> From: <input type="text" name="f" id="f" required> </label> &emsp;
+
+<label for="To"> To: </label>
+<input type="text" name="to" id="to" list="To" required>
+     <datalist id="To">
+          <option value="dubia" label="dubia">
+          <option value="lebanon" label="lebanon">
+          <option value="singapore" label="singapore">
+          <option value="paris" label="paris">
+          <option value="japan" label="japan">
+     </datalist> &emsp;
+
+<label for="Oneway" > <input type="radio" name="trip" id="oneway" value="oneway" required> One-Way </label>&emsp;
+
+<label for="RoundTrip" > <input type="radio" name="trip" id="round" value="round" required> Round Trip </label> <br><br><br>
+
+<span style="margin-left:390px;  color:#F0F8FF; font-size:13px;"> Adults &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;Children(2-12) &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp;   Infants(2>) </span><br>
+</div> 
+
+<label for="Date" style="margin-left: 60px;"> Date: </label>
+<input type="date" name="Date" id="Date" required>&emsp;
+
+<label for="Travelers"> Travelers: </label>
+<input type="text" name="travel" id="travel" list="adults" required>
+      <datalist id="adults">
+	       <option value="1" label="1">
+		   <option value="2" label="2">
+		   <option value="3" label="3">
+		   <option value="4" label="4">
+		   <option value="5" label="5">
+		   <option value="6" label="6">
+		   <option value="7" label="7">
+		   <option value="8" label="8">
+		   <option value="9" label="9">
+	   </datalist>
+	   
+<input type="text" name="travel" id="travel" list="children" required>
+       <datalist id="children">
+	       <option value="0" label="0">
+	       <option value="1" label="1">
+	       <option value="2" label="2">
+	       <option value="3" label="3">
+	   </datalist>
+	   
+<input type="text" name="travel" id="travel" list="infants" required>
+         <datalist id="infants">
+		   <option value="0" label="0">
+		   <option value="1" label="1">
+		   <option value="2" label="2">
+		   <option value="3" label="3">
+		   <option value="4" label="4">
+		   <option value="5" label="5">
+		   <option value="6" label="6">
+	     </datalist>
+		  
+&emsp;
+<label for="currency"> 	Currency: </label>
+<input type="text" name="curr" id="curr" list="currency" required>
+           <datalist id="currency">
+              <option value="USD"  label="USD" >
+              <option value="EUR"  label="EUR">
+              <option value="GBP"  label="GBP">
+              <option value="JPY"  label="JPY">
+              <option value="AUD"  label="AUD">
+              <option value="CAD"  label="CAD">
+              <option value="CHF"  label="CHF">
+              <option value="CNY"  label="CNY">
+              <option value="HKD"  label="HKD">
+              <option value="NZD"  label="NZD">
+           </datalist>
+		   
+		   &emsp;
+		   
+<label for="email"> E-mail: </label> 
+<input type="email" name="email" id="email" required>
+		   
+<br> <br> <br>
+
+<div style="margin-left:1250px;" >
+
+<button type="submit"> Reserve </button>
+<button type="reset"> Reset </button>
+
+</div>
+
+</form>
+
+</div>
+
+
+
+
+<form  name="car" method="post" id="cars" action="Ohoud-Thankyou.html"   style="display:none;">
+
+<div style = "padding-top: 30px;">
+
+<label for="delivery" style="margin-left:300px;" > Delivery Location: </label> 
+<input type = "text" name="deliveryl" id="deliveryl" required>  &emsp;
+
+<label for="pickup"> Pick-up Location: </label>
+<input type = "text" name="pickupl"  id="pickupl" required> &emsp;
+
+
+<label for="country"> Country:  </label>
+<input type="text"  name="countryl"  id="countryl" required> &emsp;
+</div>
+
+<br> <br> <br>
+
+
+<label  style="margin-left: 225px;" for ="ReturnDate"> Return Date:  </label>
+<input type="date" name="returndate" id="returndate"  required> &emsp; 
+
+
+<label for="at"> At: </label>
+<input type="time" name="at" id="at"  list="At" required> &emsp;
+
+<label for ="PickUpdate"> Pick-Up Date:  </label>
+<input type="date" name="PickUpDate" id="PickUpDate"  required> &emsp; 
+
+
+<label for="at"> At: </label>
+<input type="time" name="att" id="att"  list="Att"  required> &emsp;
+
+
+
+<label for="email"> E-mail: </label> 
+<input type="email" name="e-mail" id="e-mail" required>
+
+
+<br> <br> 
+
+<div style="margin-left:1250px; padding-top:14.8px;">
+
+<button  type="submit" > Reserve </button>
+<button type="reset" > Reset </button>
+
+
+</div>
+
+
+</form>
+
+</main>
+
+</body>
+
+</section>
+
+
+
+
+<section class = "color"  id="About" >
+
+
+<h2> Explore Before Taking off! </h2>
+
+
+
+<button style="margin-left:20px;" onclick="readmore()"> About </button>
+
+
+<hr>
+
+<div id="click" style="color: #012169;" ></div>
+
+
+<hr>
+
+
+
+
+<a href = "../marlen/Marlen.html" >
+<img class="image-two" src = "t.jpg" alt = "tourism" width = "310" height = "310" style=" margin-left:5em;  margin-right: 1em;">
+</a>
+
+<a href = "../omar/omar.html" >
+<img  class="image-two" src = "study.jpg" alt = "study" width = "310" height = "310"  style="margin-right:1em;">
+</a>
+
+<a href = "../zeinab/zeinab.html" >
+<img  class="image-two" src = "r.jpg" alt = "restaurants" width = "310" height = "310" style="margin-right:1em;">
+</a>
+
+<a href = "../iman/iman.html" >
+<img class="image-two" src = "h.jpg" alt = "hospitals" width = "310" height = "310" style="margin-right:1em; " >
+</a>
+
+<div style = "margin-top: 2.5em;" >
+<p style = "margin-left: 5em; font-size: 2em; color: #012169; text-shadow: 3px 3px 1px #AFDBF5;"> <b> Wonders &nbsp;  &emsp; &emsp; &emsp; &nbsp; Studying Abroad  &emsp; &emsp; &emsp;  &emsp; &nbsp; Dishes &nbsp; &nbsp; &emsp; &emsp; &emsp; &emsp;  Medication </b> </p>
+</div>
+
+
+</section>
+
+
+
+
+<section class = "color"  id="Contact"  >
+
+<h3> Reach Out: </h3>
+
+ <br>  
+ 
+<fieldset style=" height:428px;  width:100px;  margin-left:90px; float:left;  clear:right;" >
+
+<legend style="color:#012169;  font-size:20px;"> Sign up for our Newsletter </legend>
+<form  name="news" method="post" id="news" action="Ohoud-Thankyou.html"  style="border: none;  height:0px;"  onsubmit="return Validate()">
+
+<br> 
+
+<label class="reach" for="fname" > First Name: </label>
+<input type="text" name="fname" id="fname"  required> <br> <br>
+
+<label class="reach" for="lname"> Last Name: </label>
+<input type="text" name="lname" id="lname"   required>  <br> <br>
+
+<label class="reach" for="city" > &emsp; City: &emsp; &emsp; </label>
+<input type="text" name="city" id="city"   required>  <br> <br>
+
+<label class="reach" for="language"> Language: </label>
+<input type="text" name="lang" id="lang"   required>  <br> <br> 
+
+<label class="reach" for="Emailsss" > E-mail: </label>
+<input type="email" name="myEmail" id="myEmail" size="20"   required> 
+
+
+<div style="margin-left:20px; padding-top:30px;">
+
+<button class="bform" type="submit"> Submit </button>
+<button class="bform" type="reset" > Reset </button>
+
+</div>
+
+
+</fieldset>
+
+
+<p style=" margin-left: 800px; font-size:25px;  color:#012169;"  > <b> Visit Us At: </b> <p>
+
+<br>
+
+
+<table>
+
+
+    <tr> 
+       <th> City </th>
+       <th> Location </th>
+    </tr>
+
+    <tr> 
+       <td> Lebanon </td>
+       <td> Gemmayze Street, Beirut, Lebanon. </td>
+    </tr>
+
+    <tr>
+       <td> Dubia </td>
+       <td> Al Barsha South 3, Dubailand Area.</td>
+    </tr>
+
+    <tr>
+       <td> Singapore </td>
+       <td> Gardens by the Bay, 18 Marina Gardens Drive, Singapore 018953. </td>
+    </tr>
+
+    <tr>
+       <td> Japan </td>
+       <td> Fushimi Inari-taisha Shrine, 68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto, 612-0882. </td>
+     </tr>
+	 
+	  <tr>
+       <td> Paris </td>
+       <td> Jardin du Luxembourg, 75006 Paris, France. </td>
+     </tr>
+
+</table>
+
+<p style="margin-left: 640px;  color:#C81D11" > <small> Working days are from Monday to Friday, Working hours are from 8:00am till 4:00pm.</small> </p>
+
+
+<footer> 
+
+  Copyright &copy; Sky High Travel <br>
+<a href="mailto:SkyHighTravel@hotmail.com"> skyHighTravel@hotmail.com </a>
+
+<div id = "lastm" > </div>
+
+</footer>
+
+
+</section>
+
+</div>
+
+
+
+</body> 
+
+
+</html>
